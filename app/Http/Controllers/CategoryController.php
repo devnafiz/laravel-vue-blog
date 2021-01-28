@@ -45,4 +45,13 @@ class CategoryController extends Controller
 
        ],200);
     }
+
+    public function update_category(Request $request,$id){
+       $category=category::find($id);
+       //$category= new category();
+
+      $category->name=$request->name;
+      $category->save();
+      return['message'=>'OK'];     
+    }
 }

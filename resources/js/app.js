@@ -35,10 +35,10 @@ window.Form=Form;
 
 
 //sweet alert
-import Swal from 'sweetalert2'
-window.Swal=Swal;
+import swal from 'sweetalert2'
+window.swal=swal;
 
-const toast = Swal.mixin({
+const toast = swal.mixin({
   toast: true,
   position: 'top-end',
   showConfirmButton: false,
